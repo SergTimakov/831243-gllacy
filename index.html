@@ -30,18 +30,18 @@
   		<p>Шоколадный пломбир и лимонный сорбет </p>
   		<img src="img/ice-3.png" width="400" height="350" alt="2 рожка Глейси">
   		<p>Крем-брюле и пломбир с малиновым джемом</p>
-  		<p>Давайте оба!</p>
+  		<p class="like-both"><a class="both-button" href="#">Давайте оба!</a></p>
   		<section class="promotion-1">
   			<h2 class="visually-hidden">Акция 1</h2>
   			<h3>Малинка даром!</h3>
-  			<p>При покупке 2 кг любого фруктового мороженного, добавим в ваш заказ банку малинового варенья бесплатно</p>
-  			<p>Хочу варенье!</p>
+  			<p class="like-jam">При покупке 2 кг любого фруктового мороженного, добавим в ваш заказ банку малинового варенья бесплатно</p>
+  			<p><a class="jam-chocolate-button" href="#">Хочу варенье!</a></p>
   		</section>
   		<section class="promotion-2">
   		    <h2 class="visually-hidden">Акция 2</h2>
   		    <h3>Шоколадки даром!</h3>
   		    <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно</p>
-  		    <p>Хочу шоколадки!</p>
+  		    <p class="like-chokolate"><a class="jam-chocolate-button" href="#">Хочу шоколадки!</a></p>
   		</section>
   		<section class="hits">
   			<h2 class="visually-hidden">Хиты</h2>
@@ -94,13 +94,19 @@
   		<section class="subscription">
   			<h2 class="visually-hidden">Подписка</h2>
   			<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-  			<!-- Здесь будет форма -->
+  			<form class="subscribe-form" action="https://echo.htmlacademy.ru" metod="post">
+  				<p>
+  					<label class="visually-hidden" for="subscribe-item">Подписка</label>
+  					<input class="email-subscribe" id="subscribe-item" type="email" name="email" placeholder="Электронная почта">
+  				</p>
+  				<button class="button" class="submit">Отправить</button>
+  			</form>
+  			<button class="modal-close" type="button">Закрыть</button>
   		</section>
   		<section class="feedback">
   			<h2 class="visually-hidden">Форма обратной связи</h2>
   			<a href="#"><img src="img/map.jpg" width="1320" height="325" alt="адрес на карте"></a>
   			<p><a href="feedback-link"></a>Форма обратной связи</p>
-  			<!-- Здесь будет форма -->
   		</section>
     </main>
     <footer class="main-footer">
@@ -128,17 +134,57 @@
         </p>
     </footer>
 
+    <section class="modal modal-search">
+    	<h2 class="visually-hidden">Поиск</h2>
+    	<form class="search-form" action="https://echo.htmlacademy.ru" metod="get">
+    		<label class="visually-hidden" for="search">Поиск</label>
+    		<input id="search" type="search" name="q" placeholder="Что ищем?">
+    	</form>
+    </section>
+
     <section class="modal modal-login">
-    	<h2>Личный кабинет</h2>
-    	<p>Введите свой логин и пароль</p>
-    	<!-- Здесь будет форма -->
-    	<span class="modal-close">х</span>
+    	<h2>Вход</h2>
+    	<form class="login-form" action="https://echo.htmlacademy.ru" metod="post">
+    		<p>
+    			<label class="visually-hidden" for="user-login">Логин</label>
+    			<input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Электронная почта">
+    		</p>
+    		<p>
+    			<label class="visually-hidden" for="user-password">Пароль</label>
+    			<input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">		
+    		</p>
+    		<p class="login-password-info">
+    			<label class="visually-hidden" for="login-password-info">Забыл пароль</label>
+    			<a class="restore" href="#" id="login-password-info">Забыли пароль?</a>
+    		</p>
+    		<p class="new-registration">
+    			<label class="visually-hidden" for="new-registration">Новая регистрация</label>
+    			<a class="registration" href="#" id="new-registration">Новая регистрация</a>
+    		</p>
+    		<button class="button" type="submit">Войти</button>
+    	</form>
+    	<button class="modal-close" type="button">Закрыть</button>
     </section>
 
     <section class="modal modal-feefback">
     	<h2>Форма обратной связи</h2>
-    	<!-- Здесь будет форма -->
-    	<span class="modal-close">х</span>
+    	<form class="appointment-form" action="https://echo.htmlacademy.ru" metod="post">
+  				<p>Мы обязательно вам ответим!</p>
+  				<p>
+  					<label class="visually-hidden" for="appointment-name">Имя</label>
+  					<input class="name-feedback" id="appointment-name" type="text" name="name" placeholder="Как вас зовут?">
+  				</p>
+  				<p>
+  					<label class="visually-hidden" for="appointment-email">Электронная почта</label>
+  					<input class="email-feedback" id="appointment-email" type="text" name="email" placeholder="Ваша почта для ответа?">
+  				</p>
+  				<p>
+  					<label class="visually-hidden" for="appointment-message">Любой текст</label>
+  					<input class="message-feedback" id="appointment-message" type="text" name="message" placeholder="Напишите что-нибудь...">
+  				</p>
+  				<button class="button" class="submit">Отправить</button>
+  			</form>
+  			<button class="modal-close" type="button">Закрыть</button>
     </section>
 
   </body>
