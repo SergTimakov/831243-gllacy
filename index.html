@@ -11,12 +11,29 @@
                 <img src="img/index-logo.svg" widht="185" height="53" alt="Логотип магазина Глейси">
             </a>
             <ul class="site-navigation">
-            	<li><a href="catalog.html">Каталог</a></li>
+            	<li><a href="catalog.html">Каталог</a>
+            		<div>
+            			<ul class="site-navigation-list">
+            				<li>Новинки</li>
+            				<li>Сливочное</li>
+            				<li>Щербеты</li>
+            				<li>Фруктовый лед</li>
+            				<li>Мелорин</li>
+            			</ul>
+            		</div>
+            	</li>
             	<li><a href="payment.html">Доставка и оплата</a></li>
             	<li><a href="company.html">О компании</a></li>
             </ul>
             <ul class="user-navigation">
-            	<li><a href="search-link"></a></li>
+            	<li><a href="search-link"></a>
+            		<div>
+            			<form class="search-form" action="https://echo.htmlacademy.ru" metod="post">
+            			<label class="visually-hidden" for="search">Поиск</label>
+            			<input id="search" type="search" name="poisk" placeholder="Что ищем?">
+            		    </form>
+            		</div>
+            	</li>
             	<li><a href="login-link"></a>Вход</li>
             	<li><a href="shopping-cart-link">Пусто</a></li>
             </ul>
@@ -26,13 +43,26 @@
   		<p>С 10 до 20, ежедневно<br>
   		8 812 450-25-25</p>
   		<h1 class="visually-hidden">Магазин "Глэйси"</h1>
-  		<img src="img/ice-1.png" width="400" height="350" alt="2 рожка Глейси">
-  		<p>Крем-брюле и пломбир с малиновым джемом</p>
-  		<img src="img/ice-2.png" width="400" height="350" alt="2 рожка Глейси">
-  		<p>Шоколадный пломбир и лимонный сорбет </p>
-  		<img src="img/ice-3.png" width="400" height="350" alt="2 рожка Глейси">
-  		<p>Крем-брюле и пломбир с малиновым джемом</p>
-  		<p class="like-both"><a class="both-button" href="#">Давайте оба!</a></p>
+
+  		<div>	
+  		    <img src="img/ice-1.png" width="400" height="350" alt="2 рожка Глейси">
+  		    <p>Крем-брюле и пломбир с малиновым джемом</p>
+  		    <p class="like-both"><a class="both-button" href="#">Давайте оба!</a></p>
+  		    <button class="slide" type="button">Слайд 1</button>
+  		</div>
+  		<div>
+  		    <img src="img/ice-2.png" width="400" height="350" alt="2 рожка Глейси">
+  		    <p>Шоколадный пломбир и лимонный сорбет </p>
+  		    <p class="like-both"><a class="both-button" href="#">Давайте оба!</a></p>
+  		    <button class="slide" type="button">Слайд 2</button>
+  		</div>
+  		<div>
+  		    <img src="img/ice-3.png" width="400" height="350" alt="2 рожка Глейси">
+  		    <p>Шоколадный пломбир и лимонный сорбет</p>
+  		    <p class="like-both"><a class="both-button" href="#">Давайте оба!</a></p>
+  		    <button class="slide" type="button">Слайд 3</button>
+  		</div>
+  		
   		<section class="promotion-1">
   			<h2 class="visually-hidden">Акция 1</h2>
   			<h3>Малинка даром!</h3>
@@ -49,24 +79,24 @@
   			<h2 class="visually-hidden">Хиты</h2>
   			<ul class="hits-list">
   				<li class="hits-item">
-  					<a href="#"><img src="img/ice-cream-1.jpg" width="200" height="200" alt="Сливочное с апельсином"></a>
+  					<a href="#"><img src="img/ice-cream-1.jpg" width="200" height="200" alt="Сливочное с апельсином">
   					<p>310</p>
-  					<p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+  					<p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p></a>
   				</li>
   				<li class="hits-item">
-  					<a href="#"><img src="img/ice-cream-2.jpg" width="200" height="200" alt="Сливочно-кофейное"></a>
+  					<a href="#"><img src="img/ice-cream-2.jpg" width="200" height="200" alt="Сливочно-кофейное">
   					<p>380</p>
-  					<p>Сливочно-кофейное с кусочками шоколада</p>
+  					<p>Сливочно-кофейное с кусочками шоколада</p></a>
   				</li>
   				<li class="hits-item">
-  					<a href="#"><img src="img/ice-cream-3.jpg" width="200" height="200" alt="Сливочно-клубничное"></a>
+  					<a href="#"><img src="img/ice-cream-3.jpg" width="200" height="200" alt="Сливочно-клубничное">
   					<p>355</p>
-  					<p>Сливочно-клубничное с присыпкой из белого шоколада</p>
+  					<p>Сливочно-клубничное с присыпкой из белого шоколада</p></a>
   				</li>
   				<li class="hits-item">
-  					<a href="#"><img src="img/ice-cream-4.jpg" width="200" height="200" alt="Сливочное крем-брюле"></a>
+  					<a href="#"><img src="img/ice-cream-4.jpg" width="200" height="200" alt="Сливочное крем-брюле">
   					<p>415</p>
-  					<p>Сливочное крем-брюле с карамельной подливкой</p>
+  					<p>Сливочное крем-брюле с карамельной подливкой</p></a>
   				</li>
   			</ul>
   		</section>
@@ -135,29 +165,6 @@
     		Сделано в <a href="https://htmlacademy.ru">HTML Academy</a>
         </p>
     </footer>
-
-    <section class="modal modal-menu">
-    	<h2 class="visually-hidden">Каталог-меню</h2>
-    	<form class="menu-form">
-    		<label class="visually-hidden">Каталог-меню</label>
-    		<p><select class="menu-catalog" multiple="">
-    			<option><a href="#">Новинки</a></option>
-    			<option><a href="#">Сливочное</a></option>
-    			<option><a href="#">Щербеты</a></option>
-    			<option><a href="#">Фруктовый лед</a></option>
-    			<option><a href="#">Мелорин</a></option>
-    		</select>
-    	</p>	
-    	</form>
-    </section>
-
-    <section class="modal modal-search">
-    	<h2 class="visually-hidden">Поиск</h2>
-    	<form class="search-form" action="https://echo.htmlacademy.ru" metod="get">
-    		<label class="visually-hidden" for="search">Поиск</label>
-    		<input id="search" type="search" name="q" placeholder="Что ищем?">
-    	</form>
-    </section>
 
     <section class="modal modal-login">
     	<h2>Вход</h2>
