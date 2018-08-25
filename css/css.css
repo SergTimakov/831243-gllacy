@@ -1,0 +1,344 @@
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 500;
+	color: #ffffff;
+
+	background-color: #849d8f;
+	background-image: url(img/main-bg.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+a {
+	text-decoration: none;
+}
+
+.main-navigation {
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: bold;
+	color: #ffffff;
+
+	background-color: #849d8f;
+}
+
+.site-navigation,
+.site-navigation-list,
+.site-navigation-link,
+.user-navigation,
+.hits-list,
+.shop-list,
+.social-list,
+.catalog-press,
+.catalog-list,
+.catalog-ice,
+.ice-cream-list {
+	list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a,
+.site-navigation-link a,
+.both-button,
+.jam-chocolate-button, 
+.hits-list a,
+.social-list a,
+.footer-documetation a, 
+.feedback-button,
+.catalog-press a,
+.catalog-list a,
+.catalog-ice a,
+.ice-cream-list a {
+	color: #ffffff;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+	color: #333333;
+	background-color: #f7f6f3;
+}
+
+.site-navigation-list a {
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: regular;
+	color: #323232;
+
+}
+.site-navigation-list a:hover {
+	background-color: #fbded7;
+}
+.site-navigation-list a:focus {
+	background-color: #f6b5a5;
+}
+
+.site-navigation-link a:hover {
+	color: #ffbc9e;
+}
+
+.catalog-press {
+	background-color: d07058;
+}
+
+.catalog-list {
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: regular;
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+.catalog-ice {
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: regular;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.catalog-label {
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: medium;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.ice-cream-list {
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: medium;
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+.ice-cream-list a:hover {
+	color: #ffbc9e;
+}
+
+.new-ice p {
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: bold;
+	color: #323232;
+}
+
+.site-navigation-link a {
+	text-decoration: underline;
+}
+
+.time {
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+.phone {
+	font-size: 22px;
+	line-height: 24px;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+.like-both {
+	font-size: 32px;
+	line-height: 44px;
+	font-weight: bold;
+	color: #ffffff
+}
+
+.both-button {
+	background-color: #e84e38;
+	box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+}
+
+.promotion-1 {
+	background-color: #849d8f;
+	background-image: url('../img/raspberry.jpg');
+	background-repeat: no-repeat; 
+}
+
+.promotion-2 {
+	background-color: #849d8f;
+	background-image: url('../img/chocolate.jpg');
+	background-repeat: no-repeat; 
+}
+
+.promo h3 {
+	font-size: 35px;
+	line-height: 41px;
+	font-weight: bold;
+	color: #ffffff
+}
+
+.promo p {
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: bold;
+	color: #ffffff
+}
+
+.like-jam-chokolate {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: bold;
+	color: #ffffff
+}
+
+.jam-chocolate-button {
+	background-color: #e84e38;
+	box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+}
+
+.hits-item-line {
+	text-decoration: underline;
+}
+
+.hits-item a:hover {
+	color: #ffbc9e
+}
+
+.cost-hits {
+	font-size: 45px;
+	line-height: 1;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+.shop {
+	background-color: #849d8f;
+	background-image: url('../img/waffle.png');
+	background-repeat: repeat;
+}
+
+.about-shop {
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: medium;
+	color: #323232;
+}
+
+.shop-list {
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: regular;
+	color: #323232;
+}
+
+.blog {
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: medium;
+	color: #323232;
+
+	background-color: #849d8f;
+	background-image: url('../img/strawberry.png');
+	background-repeat: no-repeat;
+}
+
+.blog a {
+	font-size: 24px;
+	line-height: 30px;
+	color: #323232;
+	text-decoration: underline;
+}
+
+.blog a:hover {
+	color: #ffbc9e;
+}
+
+.subscription {
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: regular	;
+	color: #5a5a5a;
+
+
+	background-color: #849d8f;
+	background-image: url('../img/post-background.png');
+	background-repeat: no-repeat;
+}
+
+.footer-documetation {
+	font-size: 13px;
+	line-height: 18px;
+	font-weight: regular;
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+.footer-logo {
+	font-size: 13px;
+	line-height: 18px;
+	font-weight: regular;
+	color: #ffffff;
+}
+
+.footer-logo a {
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+.footer-logo a:hover,
+.footer-documetation a:hover {
+	font-size: 13px;
+	line-height: 18px;
+	font-weight: regular;
+	color: #ffbc9e
+}
+.footer-logo a:focus,
+.footer-documetation a:focus {
+	font-size: 4,56px;
+	line-height: 5,13px;
+	color: #ffbc9e;
+}
+
+.address-template {
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: regular;
+	color: #323232;
+}
+
+.address-item {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: bold;
+	color: #323232;
+}
+
+.feedback-button {
+	background-color: #e84e38;
+	box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+
+}
+
+.login-password-info, 
+.new-registration {
+	font-size: 13px;
+	line-height: 24px;
+	font-weight: regular;
+	color: #323232;
+}
+
+.login-password-info a:hover, 
+.new-registration a:hover {
+	color: #e84d37;
+}	
+/*
+.text-slide {
+	text-align: center;
+	font-size: 60px;
+	line-height: 60,35px;
+	font-weight: regular;
+	color: #ffffff;
+}
+*/
+
+

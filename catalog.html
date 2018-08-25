@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Мороженное Глейси</title>
+    <link href="css/css.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
   </head>
   <body>
   	<header class="main-header">
@@ -10,8 +13,10 @@
   			<a class="main-header-logo">
                 <img src="img/index-logo.svg" widht="185" height="53" alt="Логотип магазина Глейси">
             </a>
-            <ul class="site-navigation">
+            <ul class="catalog-press">
             	<li><a href="catalog.html">Каталог</a></li>
+            </ul>
+            <ul class="site-navigation-link">
             	<li><a href="payment.html">Доставка и оплата</a></li>
             	<li><a href="company.html">О компании</a></li>
             </ul>
@@ -26,16 +31,19 @@
       <p>С 10 до 20, ежедневно<br>
       8 812 450-25-25</p>
       <ul class="catalog-list">
-        <li><a href="/">Главная</li>
-        <li><a href="/catalog/">Каталог</li>
-        <li><a href="/catalog/ice-cream/">Сливочное</li>
+        <li><a href="/">Главная</a></li>
+        <li><a href="/catalog/">Каталог</a></li>  
       </ul>
+      <ul class="catalog-ice">
+        <li><a href="/catalog/ice-cream/">Сливочное</a></li>
+      </ul>
+
   		<h1>Сливочное мороженное</h1>
 
       <section class="sort-section">
         <form class="sort-form" method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
-          <legend>Сортировка</legend>
+          <legend class="catalog-label">Сортировка</legend>
           <p><select class="sort-popular">
             <option value="popular" selected>по популярности</option>
             <option value="cheap">сначала недорогие</option>
@@ -46,14 +54,14 @@
           </fieldset>
 
         <fieldset>
-          <legend>Цена 100 руб. - 500 руб.</legend>
+          <legend class="catalog-label">Цена 100 руб. - 500 руб.</legend>
           <label>
             <input type="range" name="price" value="price" min="100" max="500">
           </label>
         </fieldset>
 
         <fieldset>
-          <legend>Жирность</legend>
+          <legend class="catalog-label">Жирность</legend>
           <ul>
             <li>
               <input type="radio" name="fat" value="0%" id="filter-fat-0">
@@ -75,7 +83,7 @@
         </fieldset>
 
         <fieldset>
-            <legend>Наполнители</legend>
+            <legend class="catalog-label">Наполнители</legend>
             <ul>
               <li>
                 <input type="checkbox" name="chocolate" id="chocolate" checked>
@@ -172,7 +180,7 @@
 
       <footer class="main-footer">
       <div class="footer-social">
-        <ul>
+        <ul class="social-list">
           <li><a class="social-button" href="#">Твиттер</a></li>
           <li><a class="social-button" href="#">Инстаграм</a></li>
           <li><a class="social-button" href="#">Фейсбук</a></li>
