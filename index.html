@@ -3,20 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>Мороженное Глейси</title>
-    <link href="css/css.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
   </head>
   <body>
   	<header class="main-header">
   		<nav class="main-navigation">
   			<a class="main-header-logo">
-                <img src="img/index-logo.svg" widht="185" height="53" alt="Логотип магазина Глейси">
-            </a>
+          <img src="img/index-logo.svg" widht="185" height="53" alt="Логотип магазина Глейси">
+        </a>
             <ul class="site-navigation">
             	<li><a href="catalog.html">Каталог</a>
-            		<div>
+            		<div class="dropdown-list">
             			<ul class="site-navigation-list">
             				<li class="new-ice"><p>Новинки</p></li>
             				<li><a href="#">Сливочное</a></li>
@@ -26,28 +26,21 @@
             			</ul>
             		</div>
             	</li>
-            </ul>
-            <ul class="site-navigation-link">	
             	<li><a href="payment.html">Доставка и оплата</a></li>
             	<li><a href="company.html">О компании</a></li>
             </ul>
             <ul class="user-navigation">
-            	<li><a href="search-link"></a>
-            		<div>
-            			<form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-            			<label class="visually-hidden" for="search">Поиск</label>
-            			<input id="search" type="search" name="search" placeholder="Что ищем?">
-            		    </form>
-            		</div>
-            	</li>
+            	<li><a href="search-link">Поиск</a></li>
             	<li><a href="login-link">Вход</a></li>
             	<li><a href="shopping-cart-link">Пусто</a></li>
             </ul>
   		</nav>
   	</header>
   	<main class="container">
+      <div class="time-phone">
   		<p class="time">С 10 до 20, ежедневно</p>
   		<p class="phone">8 812 450-25-25</p>
+      </div>
   		<h1 class="visually-hidden">Магазин "Глэйси"</h1>
 
   		<div>	
@@ -142,7 +135,7 @@
   			<p>Новое в нашем блоге</p>
         <a class="blog-link" href="#">10 способов сервировки<br> фруктовых щербетов<br> к столу</a>
   		</section>
-      
+
   		<section class="subscription">
   			<h2 class="visually-hidden">Подписка</h2>
   			<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
@@ -193,6 +186,13 @@
     		Сделано в <a href="https://htmlacademy.ru">HTML Academy</a>
         </p>
     </footer>
+    <section class="modal modal-search">
+      <h2>Поиск</h2>
+      <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+        <label class="visually-hidden" for="search">Поиск</label>
+        <input id="search" type="search" name="search" placeholder="Что ищем?">
+      </form>
+    </section>
 
     <section class="modal modal-login">
     	<h2>Вход</h2>
