@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Сергей Тимаков](https://up.htmlacademy.ru/htmlcss/22/user/831243).
-* Наставник: [Андрей Слесаренко] (https://htmlacademy.ru/profile/swen)`.
+* Наставник: [Андрей Слесаренко](https://htmlacademy.ru/profile/swen)`.
 
 ---
 
