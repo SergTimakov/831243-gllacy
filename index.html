@@ -9,6 +9,11 @@
 
   </head>
   <body>
+    <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+    <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+    <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+    <div class="site-wrapper">
+      <main class="container">
   	<header class="main-header">
   		<nav class="main-navigation">
   			<a class="main-header-logo">
@@ -36,44 +41,37 @@
             </ul>
   		</nav>
   	</header>
-  	<main class="container">
+  	
       <div class="time-phone-box">
   		<p class="time">С 10 до 20, ежедневно</p>
   		<p class="phone">8 812 450-25-25</p>
       </div>
   		<h1 class="visually-hidden">Магазин "Глэйси"</h1>
 
-      <div class="ice-slide-location">
-  		<div class="slider">
-      <div class="slide-main-first" id="slide-1">
-  		    <p class="text-slide">Крем-брюле и пломбир<br> с малиновым джемом</p>
-  		    <p class="like-both"><a class="both-button" href="#">Давайте оба!</a></p>
-  		</div>
-  		<div class="slide-main-two" id="slide-2">
-  		    <p class="text-slide">Шоколадный пломбир<br> и лимонный сорбет </p>
-  		    <p class="like-both"><a class="both-button" href="#">Давайте оба!</a></p>
-  		</div>
-  		<div class="slide-main-three" id="slide-3">
-  		    <p class="text-slide">Пломбир с помадкой<br> и клубничный щербет</p>
-  		    <p class="like-both"><a class="both-button" href="#">Давайте оба!</a></p>
-  		</div>
-      <div class="slider-controls">
-          <label for="btn-1"></label>
-          <label for="btn-2"></label>
-          <label for="btn-3"></label>
-      </div>
-      </div>
-      </div>
-      <div class="container-ice">
-      <div class="box box-raspberry" id="slide-1"></div>
-      <div class="box box-lemon" id="slide-2"></div>
-      <div class="box box-strawberry" id="slide-3"></div>
-      </div>
-      <div class="control-panel">
-           <input type="radio" name="control" id="slide-1">
-           <input type="radio" name="control" id="slide-2">
-           <input type="radio" name="control" id="slide-3">
-      </div>
+
+      <section class="slider">
+        <div class="slider-controls">
+            <label for="product-1">Первый</label>
+            <label for="product-2">Второй</label>
+            <label for="product-3">Третий</label>
+        </div>
+        <ul class="slider-list">
+          <li class="slider-item slide" id="slide1">
+              <h3 class="slide-title">Крем-брюле и пломбир с малиновым джемом</h3>
+              <a class="button slide-button" href="#">Давайте оба!</a>
+          </li>
+          <li class="slider-item slide" id="slide2">
+              <h3 class="slide-title">Шоколадный пломбир и лимонный сорбет</h3>
+              <a class="button slide-button" href="#">Давайте оба!</a>
+            </li>
+            <li class="slider-item slide" id="slide3">
+              <h3 class="slide-title">Пломбир с помадкой и клубничный щербет</h3>
+              <a class="button slide-button" href="#">Давайте оба!</a>
+            </li>
+        </ul>
+      </section>
+
+
 
       <div class="promo">
         <div class="promo-item">
@@ -264,6 +262,6 @@
   			</form>
   			<button class="modal-close" type="button">Закрыть</button>
     </section>
-
+    </div>
   </body>
 </html>
