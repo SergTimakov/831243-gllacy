@@ -649,8 +649,11 @@ li:hover .site-navigation-list {
 	display: flex;
 	margin-left: 0;
 	padding-left: 0;
-	justify-content: flex-start;
-	width: 267px;
+	justify-content: space-between;
+	width: 186px;
+}
+.social-button:hover path {
+    fill: #ffffff;
 }
 .footer-documetation-location {
 	display: flex;
@@ -668,6 +671,7 @@ li:hover .site-navigation-list {
 .footer-logo {
 	width: 267px;
 	text-align: right;
+	padding-right: 50px;
 }
 .catalog-list {
 	display: flex;
@@ -862,7 +866,7 @@ li:hover .site-navigation-list {
   line-height: 24px;
   text-align: center;
   min-height: 24px;
-  color: #849d8f;
+  color: #ffffff;
 }
 .feedback {
   position: relative;
@@ -1015,3 +1019,5 @@ li:hover .site-navigation-list {
   width: 258px;
   margin: 0 auto;
 }
+
+
