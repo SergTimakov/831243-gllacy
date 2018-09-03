@@ -35,9 +35,21 @@
             	<li class="main-navigation-li"><a href="company.html">О компании</a></li>
             </ul>
             <ul class="user-navigation">
-            	<li><a href="search-link">Поиск</a></li>
-            	<li><a href="login-link">Вход</a></li>
-            	<li><a href="shopping-cart-link">Пусто</a></li>
+            	<li class="search"><a class="search-form" href="search-link"></a>
+                <div class="search-block">
+                    <input type="text" class="search-form" placeholder="Что ищем?">
+                </div>
+              </li>
+            	<li class="enter"><a href="login-link">Вход</a>
+                <div class="enter-block">
+                    <input class="enter-form" type="text" placeholder="Электронная почта">
+                    <input class="enter-form" type="password" placeholder="Пароль">
+                    <a href="#" class="button enter-button">Войти</a>
+                    <a href="#" class="enter-text">Забыли пароль?</a>
+                    <a href="#" class="enter-text">Новая регистрация</a>
+                </div>
+              </li>
+            	<li class="cart"><a href="shopping-cart-link">Пусто</a></li>
             </ul>
   		</nav>
   	</header>

@@ -9,21 +9,33 @@
   </head>
   <body>
   	<header class="main-header">
+      <a class="main-header-logo">
+          <img src="img/index-logo.svg" width="185" height="53" alt="Логотип магазина Глейси">
+        </a>
   		<nav class="main-navigation">
-  			<a class="main-header-logo">
-                <img src="img/index-logo.svg" width="185" height="53" alt="Логотип магазина Глейси">
-            </a>
             <ul class="site-navigation">
-            	<li class="catalog-press"><a href="catalog.html">Каталог</a></li>
-            	<li><a href="payment.html">Доставка и оплата</a></li>
-            	<li><a href="company.html">О компании</a></li>
+              <li class="main-navigation-li main-navigation-first-li"><a href="catalog.html">Каталог</a></li>
+              <li class="main-navigation-li"><a href="payment.html">Доставка и оплата</a></li>
+              <li class="main-navigation-li"><a href="company.html">О компании</a></li>
             </ul>
             <ul class="user-navigation">
-            	<li><a href="search-link"></a></li>
-            	<li><a href="login-link"></a>Вход</li>
-            	<li><a href="shopping-cart-link">Пусто</a></li>
+              <li class="search"><a class="search-form" href="search-link"></a>
+                <div class="search-block">
+                    <input type="text" class="search-form" placeholder="Что ищем?">
+                </div>
+              </li>
+              <li class="enter"><a href="login-link">Вход</a>
+                <div class="enter-block">
+                    <input class="enter-form" type="text" placeholder="Электронная почта">
+                    <input class="enter-form" type="password" placeholder="Пароль">
+                    <a href="#" class="button enter-button">Войти</a>
+                    <a href="#" class="enter-text">Забыли пароль?</a>
+                    <a href="#" class="enter-text">Новая регистрация</a>
+                </div>
+              </li>
+              <li class="cart"><a href="shopping-cart-link">Пусто</a></li>
             </ul>
-  		</nav>
+      </nav>
   	</header>
   	<main class="container">
       <div class="time-phone-box">
