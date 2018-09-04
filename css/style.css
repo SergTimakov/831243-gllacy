@@ -327,19 +327,25 @@ img {
 	color: #e84d37;
 }	
 .main-header {
-	padding-top:10px
+	display: flex;
+	padding-top:10px;
 	padding: 0px;
     min-height: 35px;
-    margin-left: 107px;
+    width: 1146px;
+    margin: 0 auto;
+    align-items: center;
 }
 .main-header img {
   float: left;
   width: 153px;
   height: 63px;
 }
+.main-header-logo {
+	display: block;
+}
 .main-navigation {
   display: flex;
-  width: 985px;
+  width: 1085px;
   margin: 0;
   padding: 0;	
   justify-content: space-between;
@@ -352,11 +358,8 @@ img {
 }
 .main-navigation li {
   position: relative;
-  display: inline-block;
-  margin-top: 5px;
-  margin-left: -4px;
-  padding-top: 8px;
-  padding-bottom: 18px;
+  display: flex;
+  align-items: center;
   min-height: 18px;
   vertical-align: top;
 }
@@ -384,7 +387,7 @@ img {
 }
 .site-navigation-list {
   position: absolute;
-  top: 45px;
+  top: 32px;
   left: -38px;
   display: none;
   width: 145px;
@@ -467,14 +470,15 @@ li:hover .site-navigation-list {
 	margin-left: 0;
 	padding-left: 0;
 	display: flex;
+	align-items: center;
 	width: 380px;
 	justify-content: space-between;
 }
 .user-navigation {
 	display: flex;
-	width: 174px;
-	margin-left: 175px;
-	padding-left: 0;
+	margin: 0 auto;
+	padding: 0;
+	width: 267px;
 	justify-content: space-between;
 }
 .user-navigation > li > a {
@@ -485,7 +489,7 @@ li:hover .site-navigation-list {
     height: 33px;
     background-color: rgba(255, 255, 255, 0.1);
     margin-top: 5px;
-    border-radius: 10px;
+    border-radius: 16px;
 }
 .user-navigation > li > a:hover {
     background-color: #ffffff;
@@ -501,6 +505,8 @@ li:hover .site-navigation-list {
 	position: relative;
 	background-image: url('../img/search.png');
 	background-repeat: no-repeat;
+	width: 35px;
+
 }
 .enter {
 	position: relative;
@@ -519,23 +525,25 @@ li:hover .site-navigation-list {
     position: absolute;
     z-index: 200;
     content: "";
-    width: 110%;
     height: 40px;
     top: 20px;
     right: 10px;
-    background-color: transparent;
 }
 .search:after {
     min-width: 60px;
+    background-color: transparent;
 }
 .search:hover .search-block,
 .enter:hover .enter-block,
 .cart:hover .cart-block {
     display: block;
 }
+.enter:hover .enter-block {
+	color: #323232;
+}
 .search-block {
     position: absolute;
-    top: 48px;
+    top: 43px;
     right: 9px;
     z-index: 100;
     display: none;
@@ -548,7 +556,6 @@ li:hover .site-navigation-list {
     background-color: #ffffff;
     color: #999999;
     font-size: 14px;
-    font-size: 0.875rem;
     height: 37px;
     width: 300px;
     margin: 0;
@@ -557,7 +564,7 @@ li:hover .site-navigation-list {
 }
 .enter-block {
     position: absolute;
-    top: 48px;
+    top: 43px;
     right: 9px;
     z-index: 100;
     display: none;
@@ -566,9 +573,10 @@ li:hover .site-navigation-list {
     border-radius: 5px;
     background-image: url('../img/enter.png');
 }
+
 .enter-form {
     background-color: #fff;
-    color: #999999;
+    color: #323232;
     font-size: 0.875px;
     font-size: 14px;
     height: 37px;
@@ -580,15 +588,15 @@ li:hover .site-navigation-list {
 }
 .enter-button {
     float: left;
-    padding: 7px 27px 7px 30px;
+    padding: 3px 27px 4px 30px;
     margin-top: 5px;
     margin-right: 20px;
     font-size: 15px;
     font-weight: bold;
     border: none;
 }
+
 .enter-text {
-    display: block;
     float: right;
     text-decoration: underline;
     font-size: 13px;
@@ -677,8 +685,38 @@ li:hover .site-navigation-list {
 	display: flex;
 	justify-content: flex-start;
 }
-.catalog-list-item {
-	margin: 5px;
+}
+.catalog-list {
+    font-size: 0;
+    list-style:none;
+    margin: 24px 0 8px;
+    padding: 0;
+}
+.catalog-list li {
+    position: relative;
+    display: inline-block;
+    max-width: 170px;
+    font-weight: 300;
+    line-height: 1.3;
+    vertical-align: top;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 21px 0 0;
+}
+.catalog-list li::after {
+    display: block;
+    content:' »';
+    position:absolute;
+    top: 0;
+    right: 8px;
+}
+.catalog-list-ice-cream {
+    pointer-events: none;
+    cursor: default;
+}
+.catalog-list-ice-cream a {
+	text-decoration: none;
 }
 .sort-cost-location {
 	display: flex;
