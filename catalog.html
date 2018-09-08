@@ -14,7 +14,7 @@
         </a>
   		<nav class="main-navigation">
             <ul class="site-navigation">
-              <li class="main-navigation-li main-navigation-first-li"><a href="catalog.html">Каталог</a></li>
+              <li class="main-navigation-catalog"><a href="catalog.html">Каталог</a></li>
               <li class="main-navigation-li"><a href="payment.html">Доставка и оплата</a></li>
               <li class="main-navigation-li"><a href="company.html">О компании</a></li>
             </ul>
@@ -64,15 +64,15 @@
             </select> 
           </div>
           </div>
-          <div class="range-name">Цена 100 руб. - 500 руб.
+          <div class="range-name">Цена 100 руб. - 500 руб.</div>
             <div class="range-filter">
           <label>
             <input type="range" name="price" value="price" min="100" max="500">
           </label>
-        </div>
+        
         </div>
 
-          <div class="fatness-filter-name">Жирность
+          <div class="fatness-filter-name">Жирность</div>
           <div class="fatness-filter">
               <input type="radio" name="fat" value="0%" id="filter-fat-0">
               <label for="filter-fat-0">0%</label>
@@ -85,9 +85,8 @@
 
               <input type="radio" name="fat" value="more30%" id="filter-fat-more-30">
               <label for="filter-fat-10">выше 30%</label>
+        
           </div>
-          </div>
-
       </div>
             <div class="fillings-wrap">
             <div class="fillings-filter-name">Наполнители:</div>
@@ -107,15 +106,13 @@
                 <input type="checkbox" name="jams" id="jams">
                 <label for="jams">Джемы</label>
               </div>
-              <div class="apply">
-                <input type="submit" value="Применить" name="filter-button">
-              </div>
+              <button class="filter-button" type="submit" value="Применить">Применить</button>
             </div>
         </form>
       </section>
 
   	
-  		<section class="">
+  		<section class="products">
   			<h2 class="visually-hidden">Каталог сливочного мороженного</h2>
         <div class="catalog-box">
         <section class="box-item">
