@@ -8,7 +8,6 @@ body {
 	font-weight: 500;
 	color: #ffffff;
 	background-color: #849d8f;
-	background-image: url('../img/main-bg.png');
 	background-position: center;
 	background-repeat: no-repeat;
 }
@@ -363,25 +362,15 @@ img {
   vertical-align: top;
 }
 
-.site-navigation > li > a:hover,
-.site-navigation a:focus {
-	color: #333333;
-	background-color: #f7f6f3;
-	padding: 0px;
-}
-.main-navigation-li {
-	justify-content: space-between;
-}
+
 .main-navigation-li:hover > a,
 .main-navigation a:active {
   margin: 0;
   padding: 0;
   color: black;
-  border-radius: 16px;
-}
-.main-navigation-li:hover > a {
   background: #f7f6f3;
 }
+
 .main-navigation a:active {
   background: #ededed;
   box-shadow: #696969;
@@ -449,7 +438,6 @@ li:hover .site-navigation-list {
   border-radius: 0;
 }
 .site-navigation-list a:active {
-
   margin: 0;
   color: #323232;
   background-color: #f6b5a5;
@@ -460,15 +448,28 @@ li:hover .site-navigation-list {
 	margin: 0;
 	padding: 0;
 	display: flex;
+	width: 410px;
 	align-items: center;
-	width: 400px;
 	justify-content: space-between;
 }
-.site-navigation > li > a {
-    line-height: 33px;
-    padding: 0;
-    margin: 0;
-    height: 33px;
+.site-navigation a {
+    padding: 0 15px;
+    border-radius: 16px;
+	line-height: 33px;
+}
+.site-navigation li:hover {
+	border-radius: 16px;
+    background-color: #f8f7f4;
+    color: #000000;
+}
+.site-navigation a:hover {
+    color: #000000;
+}
+.site-navigation a:active {
+    color: #000000;
+}
+.site-navigation a:focus {
+    color: #000000;
 }
 .user-navigation {
 	display: flex;
@@ -507,36 +508,88 @@ li:hover .site-navigation-list {
 .cart {
     position: relative;
 }
-.user-navigation .search-link {
-	padding-left: 50px;
-	position: relative;
-	background-color: yellow;
+.user-navigation .search a:focus,
+.user-navigation .search a:hover {
+    background-color: #849d8f;
 }
-.search-link::before {
+.search-form::before {
     content: "";
-    width: 10px;
-    height: 10px;
-    top: 0px;
+    width: 34px;
+    height: 34px;
+    top: 5px;
     left: 0px;
     position: absolute;
     display: inline-block;
-    background-color: red;
-    background-image: url('img/search.png');
+    background-image: url('../img/search.png');
     background-position: 0 0;
  }
- .user-navigation .login-link {
-    padding-left: 5px;
-	position: relative;
-	background-color: yellow;
+ .search-form:hover::after {
+    content: "";
+    width: 34px;
+    height: 34px;
+    top: 5px;
+    right: 15px;
+    position: absolute;
+    display: inline-block;
+    background-image: url('../img/search-0.png');
+    background-position: 0 0;
  }
 .search:hover .search-block,
 .enter:hover .enter-block,
 .cart:hover .cart-block {
     display: block;
 }
+.enter-picture::before {
+    content: "";
+    width: 34px;
+    height: 34px;
+    top: 12px;
+    left: 12px;
+    position: absolute;
+    display: inline-block;
+    background-image: url('../img/enter.png');
+    background-repeat: no-repeat;
+ }
+ .enter-picture:hover::after {
+    content: "";
+    width: 34px;
+    height: 34px;
+    top: 12px;
+    left: 12px;
+    position: absolute;
+    background-image: url('../img/enter_copy.png');
+    background-repeat: no-repeat;
+ }
+ .user-navigation .enter a {
+ 	padding-left: 40px;
+ }
 .enter:hover .enter-block {
 	color: #323232;
 }
+.basket::before {
+    content: "";
+    width: 34px;
+    height: 34px;
+    top: 12px;
+    left: 12px;
+    position: absolute;
+    display: inline-block;
+    background-image: url('../img/basket.png');
+    background-repeat: no-repeat;
+ } 
+ .basket:hover::after {
+    content: "";
+    width: 34px;
+    height: 34px;
+    top: 12px;
+    left: 12px;
+    position: absolute;
+    background-image: url('../img/basket_copy.png');
+    background-repeat: no-repeat;
+ }
+ .user-navigation .cart a {
+ 	padding-left: 40px;
+ }
 .search-block {
     position: absolute;
     top: 43px;
@@ -567,7 +620,6 @@ li:hover .site-navigation-list {
     padding: 15px 16px;
     background-color: #f8f7f4;
     border-radius: 5px;
-    background-image: url('../img/enter.png');
 }
 .enter-form {
     background-color: #fff;
