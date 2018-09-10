@@ -657,8 +657,18 @@ li:hover .site-navigation-list {
   padding: 0 20px;
 }
 .time-phone-box {
-	margin-left: 950px;
-	text-align: right;
+	margin-right: 10px;
+	display: block;
+	float: right;
+}
+.time {
+	font-size: 14px;
+    font-weight: normal;
+    padding-left: 18px;
+}
+.numbers {
+    font-size: 22px;
+    font-weight: bold;
 }
 .promo {
 	display: flex;
@@ -694,7 +704,7 @@ li:hover .site-navigation-list {
 	margin: 0 auto;
 	margin-top: 10px;
 	padding: 0 10px;
-	background-color: #849d8f;
+
 	justify-content: space-between;
 }
 .social-list {
@@ -756,6 +766,9 @@ li:hover .site-navigation-list {
     cursor: default;
     text-decoration: none;
     list-style: none;
+}
+.catalog-list .catalog-list-ice-cream {
+	text-decoration: none;
 }
 .sort-cost-location {
 	display: flex;
@@ -1165,17 +1178,11 @@ li:hover .site-navigation-list {
 	position: absolute;
 	left: 205px;
 	top: 22px;
-    width: 170px;
+    width: 218px;
     color: #fff;
     background: #aabab0;
     border-radius: 20px;
     text-overflow: ellipsis;
-    padding: 2px 11px 2px 11px;
-    text-align: center;
-}
-.range-filter label {
-	margin: 0;
-	padding: 0;
 }
 .fatness-filter-name {
 	left: 435px;
@@ -1185,8 +1192,8 @@ li:hover .site-navigation-list {
 }
 .fatness-filter {
 	position: absolute;
-	left: 420px;
-	top: 20px;
+	left: 430px;
+	top: 22px;
     padding-left: 17px;
     padding-right: 17px;
     background: #aabab0;
@@ -1404,4 +1411,47 @@ li:hover .site-navigation-list {
 }
 .sort-form button:hover {
 	background-color: transparent;
+}
+
+
+.filter-item {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.range-controls {
+	position: relative;
+	height: 20px;
+	padding-top: 16px;
+	padding-right: 20px;
+    padding-left: 20px;
+}
+.range-controls .scale {
+  height: 4px;
+
+  background: #d7dcde;
+}
+.range-controls .bar {
+  width: 70%;
+  height: 4px;
+  background: #ffffff;
+}
+.range-controls .toggle {
+  position: absolute;
+  top: 9px;
+  left: 40px;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  cursor: pointer;
+}
+.range-controls .toggle-min {
+  left: 35px;
+}
+.range-controls .toggle-max {
+  left: 140px;
 }
