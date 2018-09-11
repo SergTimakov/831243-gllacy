@@ -620,11 +620,9 @@ li:hover .site-navigation-list {
     padding: 15px 16px;
     background-color: #f8f7f4;
     border-radius: 5px;
+    color: #000000;
 }
 .enter-form {
-    background-color: #fff;
-    color: #323232;
-    font-size: 0.875px;
     font-size: 14px;
     height: 37px;
     width: 250px;
@@ -635,21 +633,26 @@ li:hover .site-navigation-list {
 }
 .enter-button {
     float: left;
-    padding: 3px 27px 4px 30px;
+    margin: 0;
+    padding: 0;
+    padding-right: 40px;
     margin-top: 5px;
-    margin-right: 20px;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: bold;
     border: none;
+    text-decoration: none;
+    color: #ffffff;
 }
 .enter-text {
     float: right;
-    text-decoration: underline;
     font-size: 13px;
     font-weight: normal;
-    color: #333333;
-    margin-right: 10px;
-    line-height: 20px;
+    color: #ffffff;
+}
+.enter-block a {
+	color: #000000;
+	text-decoration: none;
+	border-bottom: dashed 1px #323232;
 }
 .container {
   width: 1146px;
@@ -810,13 +813,13 @@ li:hover .site-navigation-list {
   float: left;
   background-color: #73172b;
   background-image: url('../img/raspberry.jpg');
-  border-radius: 11px;
+  border-radius: 15px;
 }
 .promo-item:last-child {
   float: right;
   background-color: #3a2217;
   background-image: url('../img/chocolate.jpg');
-  border-radius: 11px;
+  border-radius: 15px;
 }
 .promo-item h2 {
   margin-bottom: -2px;
@@ -885,7 +888,7 @@ li:hover .site-navigation-list {
   background-color: white;
   background-image: url('../img/strawberry.png');
   min-height: 198px;
-  border-radius: 11px;
+  border-radius: 15px;
 }
 .blog p {
   margin: 0;
@@ -906,7 +909,7 @@ li:hover .site-navigation-list {
   float: right;
   width: 560px;
   background-image: url('../img/post-image.png');
-  border-radius: 11px;
+  border-radius: 15px;
   min-height: 220px;
   background-color: #849d8f;
   height: auto;
@@ -1141,33 +1144,40 @@ li:hover .site-navigation-list {
     border: 4px solid #fff;
 }
 .filter-type {
-    display: block;
+	position: absolute;
+    display: inline-block;
+    left: -15px;
     background: #aabab0;
     border-radius: 20px;
     text-overflow: ellipsis;
     padding: 6px 25px 9px 11px;
-}
-.text-filter {
-	font-size: bold;
-	color: red;
-}
-.filter-type span {
-	color: blue;
+    color: #ffffff;
+    font-size: 16px;
 }
 .filter-type-container:hover .filter-type {
     background: #fff;
     color: #000;
 }
 .filter-type-name {
-    max-width:170px;
-    margin-bottom:7px;
-    font-size:14px;
+	position: absolute;
+	left: 15px;
+    max-width: 170px;
+    margin-bottom: 7px;
+    font-size: 14px;
 }
 .filter-type-container {
+	width: 150px;
+    border-radius: 20px;
+    min-height: 18px;
+    margin: 5px 0 0;
+    padding: 0;
 	top: 20px;
+	color: #ffffff;
+    font-size: 20px;
 }
 .range-name {
     position: relative;
+    left: 185px;
     max-width: 170px;
     margin-bottom: 7px;
     padding-left: 16px;
@@ -1176,8 +1186,8 @@ li:hover .site-navigation-list {
 }
 .range-filter {
 	position: absolute;
-	left: 205px;
-	top: 22px;
+	left: 220px;
+	top: 27px;
     width: 218px;
     color: #fff;
     background: #aabab0;
@@ -1185,15 +1195,19 @@ li:hover .site-navigation-list {
     text-overflow: ellipsis;
 }
 .fatness-filter-name {
-	left: 435px;
+	left: 455px;
 	position: absolute;
     padding-left: 16px;
     font-size: 14px;
 }
 .fatness-filter {
 	position: absolute;
-	left: 430px;
-	top: 22px;
+	display: flex;
+	justify-content: space-between;
+	width: 390px;
+	left: 440px;
+	height: 36px;
+	top: 27px;
     padding-left: 17px;
     padding-right: 17px;
     background: #aabab0;
@@ -1201,29 +1215,43 @@ li:hover .site-navigation-list {
     margin-left: 20px;
 }
 .fatness-filter label {
-    display:inline-block;
-    position:relative;
-    max-width:750px;
-    min-height:22px;
-    padding-left:29px;
-    font-size:16px;
-    margin-top: 6px;
+    display: inline-block;
+    position: relative;
+    max-width: 750px;
+    padding-left: 34px;
+    font-size: 16px;
+    margin-top: 7px;
     margin-bottom: 6px;
-    cursor:pointer;
+    vertical-align: top;
+    cursor: pointer;
 }
 .fatness-filter label::before {
     content: '';
     position: absolute;
-    top: 1px;
-    left: 0;
-    width: 12px;
-    height: 12px;
+    top: 2px;
+    bottom: 1px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
     border: 3px solid #aabab0;
     border-radius: 50%;
-    box-shadow: 0 0 0 1.4px #fff;
+    box-shadow: 0 0 0 4px #fff;
+    opacity: 0.8;
 }
 .fatness-filter label:hover::before {
-    box-shadow: 0 0 0 2.4px #fff;
+    box-shadow: 0 0 0 4px #fff;
+    opacity: 1;
+}
+input[type=radio] {
+	display: none;
+}
+input[type=radio]:checked+label::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
 }
 .fillings-wrap {
 	position: relative;
@@ -1233,6 +1261,7 @@ li:hover .site-navigation-list {
 }
 .fillings-filter-name {
     position: relative;
+    top: 45px;
     max-width: 170px;
     padding-left: 16px;
     font-size: 14px;
@@ -1242,33 +1271,43 @@ li:hover .site-navigation-list {
 	position: absolute;
 	margin: 0;
 	padding: 0;
-	top: 20px;
-    padding-left:16px;
+	top: 70px;
+    padding-left: 16px;
     padding-top: 5px;
     background: #aabab0;
     border-radius: 20px;
 }
 .fillings-filter label {
-    display:inline-block;
-    position:relative;
-    max-width:750px;
-    min-height:22px;
-    margin-right:25px;
-    margin-bottom:6px;
-    padding-left:30px;
-    font-size:16px;
-    cursor:pointer;
-    vertical-align:middle;
+    display: inline-block;
+    position: relative;
+    max-width: 750px;
+    min-height: 22px;
+    margin-right: 25px;
+    margin-bottom: 6px;
+    padding-left: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    vertical-align: middle;
 }
 .fillings-filter label::before {
-    content:'';
-    display:block;
-    position:absolute;
-    left:0;
-    width:18px;
-    height:18px;
-    border:1px solid #fff;
-    border-radius:3px;
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #fff;
+    border-radius: 3px;
+}
+input[type=checkbox] {
+	display: none;
+}
+input[type=checkbox]:checked+label::before {
+    content: "";
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    background-image: url('../img/checkbox-on.png');
 }
 .apply {
 	position: absolute;
@@ -1294,7 +1333,7 @@ li:hover .site-navigation-list {
 	box-shadow: inset 0 2px 1px #696969;
 }
 .products {
-	margin-top: 50px;
+	margin-top: 100px;
 }
 .appointment-form {
     position: fixed;
@@ -1412,23 +1451,20 @@ li:hover .site-navigation-list {
 .sort-form button:hover {
 	background-color: transparent;
 }
-
-
 .filter-item {
   margin: 0;
   padding: 0;
   border: none;
 }
 .range-controls {
-	position: relative;
-	height: 20px;
-	padding-top: 16px;
-	padding-right: 20px;
-    padding-left: 20px;
+  position: relative;
+  height: 20px;
+  padding-top: 16px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 .range-controls .scale {
   height: 4px;
-
   background: #d7dcde;
 }
 .range-controls .bar {
@@ -1454,4 +1490,9 @@ li:hover .site-navigation-list {
 }
 .range-controls .toggle-max {
   left: 140px;
+}
+.filter-button {
+	position: absolute;
+	top: 49px;
+	left: 755px;
 }
