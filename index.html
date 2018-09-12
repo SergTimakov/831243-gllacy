@@ -41,14 +41,20 @@
                 </div>
               </li>
             	<li class="enter"><a class="enter-picture" href="login-link">Вход</a>
-                <div class="enter-block">
-                    <input class="enter-form" type="text" placeholder="Электронная почта">
-                    <input class="enter-form" type="password" placeholder="Пароль">
-                    <div class="button enter-button"><a href="#">Войти</a></div>
-                    <div class="enter-text"><a href="#">Забыли пароль?<br></a>
-                    <a href="#">Новая регистрация</a></div>
-                </div>
-              </li>
+
+                  <form class="enter-block" action="https://echo.htmlacademy.ru" method="post">
+                    <input class="enter-form" type="text" name="login" placeholder="Электронная почта">
+                      <label for="login" class="visually-hidden">Электронная почта</label>
+                    <input class="enter-form" type="password" name="password" placeholder="Пароль">
+                      <label for="password" class="visually-hidden">Пароль</label>
+                    <input class="button enter-button" type="submit" value="Войти">
+                      <div class="enter-text-box">
+                        <a class="enter-text" href="#">Забыли пароль?</a>
+                        <a class="enter-text" href="#">Новая регистрация</a>
+                      </div>
+                  </form>
+
+                </li>
             	<li class="cart"><a class="basket" href="shopping-cart-link">Пусто</a></li>
             </ul>
   		</nav>
