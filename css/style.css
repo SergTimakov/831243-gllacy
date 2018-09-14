@@ -1477,7 +1477,9 @@ input[type=checkbox]:checked+label::before {
     margin: 0;
     padding: 0;
 }
-
+.cart:hover .basket-form {
+	display: block;
+}
 .basket-form-block {
     top: 49px;
     right: 0;
@@ -1495,7 +1497,7 @@ input[type=checkbox]:checked+label::before {
     font-size: 15px;
 }
 .basket-form-block .button {
-    font-weight: 700;
+    font-weight: bold;
     font-size: 18px;
     line-height: 24px;
     padding: 12px 10px 12px 0px;
@@ -1564,4 +1566,14 @@ input[type=checkbox]:checked+label::before {
     height: 33px;
     margin-right: 10px;
     border-radius: 50%;
+}
+.basket-list-title::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: 15px;
+    margin-top: 5px;
+    background-image: url('../img/x.png');
+    background-repeat: no-repeat;
 }
