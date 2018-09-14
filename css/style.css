@@ -1577,3 +1577,13 @@ input[type=checkbox]:checked+label::before {
     background-image: url('../img/x.png');
     background-repeat: no-repeat;
 }
+.feedback::before {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 255px;
+    top: 160px;
+    background-image: url('../img/pin.png');
+    background-repeat: no-repeat;
+}
