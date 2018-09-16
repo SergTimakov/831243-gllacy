@@ -647,6 +647,7 @@ a .enter-text {
   width: 1146px;
   margin: 0 auto;
   padding: 0 20px;
+  margin-bottom: 20px; 
 }
 .time-phone-box {
 	margin-right: 10px;
