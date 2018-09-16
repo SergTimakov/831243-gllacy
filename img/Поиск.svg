@@ -1,0 +1,168 @@
+
+.common-button-wrap {
+    display: inline-block;
+    font-size: 0;
+    vertical-align: top;
+    margin: 0 10px 0 0;
+    padding: 0 0 6px;
+}
+.common-buttons .common-button-wrap:first-child {
+    width: 32px;
+    margin-left: 6px;
+}
+.common-buttons .common-button-wrap:nth-child(2) {
+    margin-right: 8px;
+}
+.common-button-wrap:hover .common-buttons-form {
+    display: block;
+}
+.common-buttons .common-button-wrap:last-of-type,
+.common-buttons .btn:last-child,
+.item:last-child,
+.item:nth-of-type(4n) {
+    margin-right: 0;
+}
+
+.common-buttons .btn-basket-active:last-of-type {
+    padding-left: 44px;
+    padding-right: 16px;
+    color: #323232;
+    background-color: #f8f7f4;
+}
+.btn-basket-active::before,
+.btn-basket:hover::before {
+    background-position: -5px -35px;
+}
+.btn-basket::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 17px;
+    height: 17px;
+    background-color: inherit;
+    background-image: url(../img/sprite-common-buttons.png);
+    background-repeat: no-repeat;
+    background-position: -5px -123px;
+}
+.btn-basket::before {
+    top:6px;
+    left:16px;
+    width:20px;
+    height:19px;
+    background-position:-5px -65px;
+}
+.common-buttons .btn-basket {
+    padding-right: 34px;
+    padding-left: 45px;
+}
+
+
+.common-buttons-form {
+    position: absolute;
+    display: ;
+    background-color: #f8f7f4;
+    border-radius: 5px;
+    box-shadow: 0 20px 20px 0 rgba(0,0,0,.6);
+    z-index: 100;
+    margin: 0;
+    padding: 0;
+}
+.common-buttons-form-basket {
+    top: 49px;
+    right: 0;
+    width: 509px;
+    font-size: 13px;
+    line-height: 18px;
+    color: #323232;
+    min-height: 203px;
+    padding: 20px 14px 19px 17px;
+}
+
+.common-buttons-form-basket img {
+    position: relative;
+    top: -8px;
+    width: 33px;
+    height: 33px;
+    margin-right: 14px;
+    border-radius: 50%;
+}
+.common-buttons-form-basket .total {
+    margin-top: 15px;
+    margin-bottom: 13px;
+    font-weight: 700;
+    font-size: 15px;
+}
+.common-buttons-form-basket .btn {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 9px 13px 11px 12px;
+}
+.common-buttons-form-basket .btn {
+    text-align: center;
+    background-color: inherit;
+    background-image: linear-gradient(#e74a35,#f26843);
+    border: 0;
+    border-radius: 50px;
+    box-shadow: 0 2px 2px 0 rgba(85,8,0,.46);
+}
+.common-buttons-form-basket .btn:hover {
+    color: #fff;
+    background-color: inherit;
+    background-image: linear-gradient(#f58669,#ec6f5e);
+    box-shadow: 0 1px 2px 0 #ac1000;
+}
+.common-buttons-form-basket .btn:active {
+    color: #fff;
+    background-color: inherit;
+    background-image: linear-gradient(#d74632,#e1613e);
+    box-shadow: inset 0 1px 2px 0 #942718;
+}
+.common-buttons-form-basket .btn,
+.common-buttons-form-basket .total {
+   float: right;
+}
+
+.basket-item {
+    padding-bottom: 11px;
+    min-height: 32px;
+    vertical-align: top;
+}
+
+.basket-item-last {
+    padding-bottom: 14px;
+    border-bottom: 1px solid #cacac7;
+}
+
+.basket-item-delete {
+    position:relative;
+    display:inline-block;
+    width:10px;
+    height:10px;
+    background-color:inherit;
+    background-image: url(../img/catalog/x.svg);
+    border: 0;
+    vertical-align: top;
+    margin: 10px 0 0;
+    padding: 0;
+}
+.basket-item-count,
+.basket-item-title,
+.basket-item-worth {
+    display: inline-block;
+    padding-top: 8px;
+    vertical-align: top;
+}
+.basket-item-title {
+    width: 260px;
+    margin-left: 17px;
+    margin-right: 24px;
+}
+
+.basket-item-count .cost-per-kg {
+    color: #999;
+}
+.basket-item-count {
+    margin-right: 24px;
+}
