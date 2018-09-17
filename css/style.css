@@ -1,7 +1,6 @@
 body {
 	margin: 0;
 	padding: 0;
-
 	font-family: Roboto, "Arial", sans-serif;
 	font-size: 16px;
 	line-height: 22px;
@@ -52,7 +51,7 @@ img {
 	color: #ffffff;
 }
 .catalog-press {
-	background-color: d07058;
+	background-color: #d07058;
 }
 .catalog-list {
 	font-size: 14px;
@@ -287,13 +286,13 @@ img {
 }
 .footer-logo a:focus,
 .work-info a:focus {
-	font-size: 4,56px;
-	line-height: 5,13px;
+	font-size: 5px;
+	line-height: 5px;
 	color: #ffbc9e;
 }
 .operation-info a:focus {
-	font-size: 4,56px;
-	line-height: 5,13px;
+	font-size: 5px;
+	line-height: 5px;
 	color: #ffbc9e;
 }
 .address-template {
@@ -329,7 +328,6 @@ img {
     align-items: center;
 }
 .main-header img {
-  float: left;
   width: 153px;
   height: 63px;
 }
@@ -603,14 +601,14 @@ li:hover .site-navigation-list {
 	display: block;
     font-size: 14px;
     height: 37px;
-    width: 250px;
+    width: 280px;
     margin: 0;
     padding-left: 12px;
     border: 1px solid #d3d3d2;
     margin-bottom: 10px;
 }
 .enter-button {
-    float: left;
+	display: inline-block;
     margin: 0;
     padding: 0;
     margin-top: 5px;
@@ -627,7 +625,7 @@ li:hover .site-navigation-list {
     min-height: 44px;
     vertical-align: top;
 }
-a .enter-text {
+.enter-text a {
 	color: #323232;
     border-bottom-color: #b2b2b2;
 }
@@ -635,9 +633,16 @@ a .enter-text {
     color :#e84d37;
     border-bottom-color :#f9cdc4;
 }
+.enter-text-box {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
 .enter-text-box a {
+	color: #323232;
     font-size: 13px;
     line-height: 24px;
+    font-weight: normal;
 }
 .enter-text-box a:last-child {
     position: relative;
@@ -651,8 +656,8 @@ a .enter-text {
 }
 .time-phone-box {
 	margin-right: 10px;
-	display: block;
-	float: right;
+	display: inline-block;
+	margin-left: 967px;
 }
 .time {
 	font-size: 14px;
@@ -773,10 +778,9 @@ a .enter-text {
 	display: flex;
 	list-style: none;
 }
-.promo::after {
-  content: "";
-  display: table;
-  clear: both;
+.promo {
+	display: flex;
+	justify-content: space-between;
 }
 .promo-item {
   width: 520px;
@@ -786,13 +790,11 @@ a .enter-text {
   min-height: 191px;
 }
 .promo-item:first-child {
-  float: left;
   background-color: #73172b;
   background-image: url('../img/raspberry.jpg');
   border-radius: 15px;
 }
 .promo-item:last-child {
-  float: right;
   background-color: #3a2217;
   background-image: url('../img/chocolate.jpg');
   border-radius: 15px;
@@ -807,8 +809,8 @@ a .enter-text {
   line-height: 22px;
 }
 .promo-item .button {
-  display: block;
-  float: right;
+  display: inline-block;
+  margin-left: 330px;
   padding: 10px 25px 11px 21px;
   font-weight: 700;
   font-size: 18px;
@@ -818,7 +820,7 @@ a .enter-text {
 }
 .shop {
   width: 1110px;
-  margin-top: 170px;
+  margin-top: 80px;
   margin-bottom: 40px;
   padding: 25px 15px 22px 20px;
   font-size: 16px;
@@ -828,6 +830,10 @@ a .enter-text {
   background-image: url('../img/waffle.png');
   min-height: 246px;
   border-radius: 15px;
+}
+.shop-block {
+  display: flex;
+  justify-content: space-between;
 }
 .shop p {  
   margin: 0;
@@ -843,20 +849,19 @@ a .enter-text {
   line-height: 30px;
 }
 .shop-left {
-  float: left;
+  display: block;
+  margin: 0;
+  padding: 0;
+  top: 20px;
   margin-right: 20px;
+
 }
 .shop-right {
-  float: right;
-}
-.news-location: {
-	display: flex;
-	justify-content: space-between;
+  display: block;
 }
 .blog {
   margin-bottom: 40px;
   width: 540px;
-  float: left;
   padding: 22px 0px 0px 20px;
   color: black;
   font-size: 16px;
@@ -882,7 +887,6 @@ a .enter-text {
   vertical-align: top;
 }
 .subscription {
-  float: right;
   width: 560px;
   background-image: url('../img/post-image.png');
   border-radius: 15px;
@@ -926,8 +930,7 @@ a .enter-text {
   color: white;
 }
 .wrap .button {
-  display: block;
-  float: right;
+  display: inline-block;
   padding: 8px 10px 8px 11px;
   font-weight: bold;
   font-size: 18px;
@@ -992,7 +995,7 @@ a .enter-text {
 .item-hover-content {
   position: relative;
   display: inline-block;
-  float: left;
+
   width: 267px;
   margin-right: 26px;
   margin-bottom: 40px;
@@ -1091,26 +1094,7 @@ a .enter-text {
 	display: flex;
 	justify-content: space-between;
 }
-.filter-form input[type=submit] {
-    float: left;
-    margin-top: 23px;
-    margin-bottom: 0;
-    border: 2px solid #fff;
-    box-shadow: none;
-    background-image: none;
-    background-color: #9aaea3;
-    line-height: 1.3;
-    padding: 6px 27px;
-}
-.filter-form input[type=submit]:active {
-    background-color: #eaeaea;
-    color: #000;
-    box-shadow: inset 0 2px 1px #696969;
-}
-.filter-form input[type=submit]:hover {
-    background-color: #fafbfb;
-    color: #000;
-}
+
 .filter-type-container::after {
     top: 15px;
     right: 15px;
@@ -1384,7 +1368,9 @@ input[type=checkbox]:checked+label::before {
 	transform: rotate(-45deg);
 }
 .button-send {
-    float: right;
+	position: absolute;
+    left: 350px;
+    top: 380px;
     margin-top: 15px;
     padding: 10px 15px;
     font: inherit;
@@ -1395,6 +1381,14 @@ input[type=checkbox]:checked+label::before {
     border-radius: 50px;
     box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
     border: none;
+}
+.close-1 {
+	left: 10px;
+	top: 27px;
+}
+.close-2 {
+    left: 10px;
+	top: 87px;
 }
 .main-navigation-catalog {
     background-color: #d07058;
@@ -1494,15 +1488,15 @@ input[type=checkbox]:checked+label::before {
 .basket-form-block .sum {
     margin-top: 15px;
     margin-bottom: 13px;
-    font-weight: 700;
+    font-weight: bold;
     font-size: 15px;
 }
 .basket-form-block .button {
     font-weight: bold;
     font-size: 18px;
     line-height: 24px;
-    padding: 12px 10px 12px 0px;
-    text-align: center;
+    padding: 12px 25px 12px 20px;
+    vertical-align: top;
 }
 .basket-form-block .button {
     background-color: inherit;
@@ -1526,12 +1520,13 @@ input[type=checkbox]:checked+label::before {
     border-radius: 20px;
 }
 .basket-form-block .button {
-    position: absolute;
-    top: 180px;
-    left: 335px;
+    display: inline-block;
+    margin-left: 300px;
+    vertical-align: top;
 }
 .basket-form-block .sum {
-    float: right;
+    display: inline-block;
+    margin-left: 385px;
 }
 .basket-list {
     padding-bottom: 11px;
@@ -1550,33 +1545,21 @@ input[type=checkbox]:checked+label::before {
     vertical-align: top;
 }
 .basket-list-title {
-    width: 260px;
+	display: inline-block;
+    width: 280px;
     margin-left: 17px;
-    margin-right: 24px;
 }
 .basket-count .count-kg {
     color: #999;
 }
 .basket-count {
-    margin-right: 24px;
+    margin-right: 10px;
 }
 .basket-form-block img {
     position: relative;
-    top: -6px;
     width: 33px;
     height: 33px;
-    margin-right: 10px;
     border-radius: 50%;
-}
-.basket-list-title::before {
-    content: "";
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    left: 15px;
-    margin-top: 5px;
-    background-image: url('../img/x.png');
-    background-repeat: no-repeat;
 }
 .feedback::before {
     content: "";
