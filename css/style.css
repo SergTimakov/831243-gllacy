@@ -498,9 +498,9 @@ li:hover .site-navigation-list {
     top: 5px;
     left: 0px;
     position: absolute;
-    display: inline-block;
+    display: block;
     background-image: url('../img/search.png');
-    background-position: 0 0;
+
  }
  .search-form:hover::after {
     content: "";
